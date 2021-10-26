@@ -1,0 +1,26 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "js, javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SSmetanka/practice-js.git"
+  },
+  "keywords": [
+    "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"
+  ],
+  "author": "SSmetanka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SSmetanka/practice-js/issues"
+  },
+  "homepage": "https://github.com/SSmetanka/practice-js#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0",
+    "parcel": "^2.0.0"
+  }
+}

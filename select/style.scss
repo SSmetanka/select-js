@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.app{
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+
+}
+.wrap{
+  width: 500px;
+}
+
+$height: 40px;
+
+.select{
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  position: relative;
+  z-index: 100;
+  &.open{
+    .select__dropdown{
+      display: block;
+    }
+    .select__input{
+      border-bottom: none;
+    }
+    .select__svg{
+      background-image: url(../caret-up.svg);
+    }
+    .select__backdrop{
+      display: block;
+    }
+  }
+  &__input {
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: $height;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+  &__svg{
+    background-image: url(../caret-down.svg);
+    width: 20px;
+    height: 30px;
+  }
+  &__dropdown{
+    display: none;
+    position: absolute;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    top: $height;
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-x: auto;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
+  &__list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  &__backdrop{
+    position: fixed;
+    z-index: -1;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: transparent;
+  }
+  &__item{
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    &.selected{
+      background-color: bisque;
+    }
+    &:hover{
+      background-color: #eee;
+      cursor: pointer;
+      transition: .15s background-color ease-in;
+    }
+  }
+}
