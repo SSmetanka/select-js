@@ -20,9 +20,13 @@ $height: 40px;
   &.open{
     .select__dropdown{
       display: block;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
     }
     .select__input{
       border-bottom: none;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
     }
     .select__svg{
       background-image: url(../caret-up.svg);
